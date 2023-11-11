@@ -40,3 +40,5 @@ getDbId2("sugam")
 const data: number[]=[1,2,3,"5"]
 const data2: string[]=[1,2,3,"5"]
 const data3: (string | number)[] = [1,2,3,"5"]
+
+export{}
