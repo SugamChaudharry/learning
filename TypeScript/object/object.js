@@ -16,5 +16,3 @@ craeteUser({
     email: "b@b.com",
     isActivated: false,
 });
-
-
