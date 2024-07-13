@@ -1,0 +1,93 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "The Great Gatsby Review",
+      "views": 300,
+      "tags": [
+        "classic",
+        "novel",
+        "Fitzgerald"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Understanding 1984",
+      "views": 450,
+      "tags": [
+        "dystopian",
+        "Orwell",
+        "novel"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Top 10 Sci-Fi Books",
+      "views": 500,
+      "tags": [
+        "sci-fi",
+        "list",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "The Catcher in the Rye: A Deep Dive",
+      "views": 350,
+      "tags": [
+        "classic",
+        "Salinger",
+        "novel"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "The sugam story",
+      "tags": [
+        "sci-fi",
+        "recommendations",
+        "Salinger"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "The bobby story",
+      "tags": [
+        "classic",
+        "novel",
+        "sci-fi",
+        "recommendations",
+        "Salinger"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "the sugam bobby story",
+      "tags": [
+        "novel",
+        "Orwell",
+        "sci-fi"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "the sugam bobby story",
+      "tags": [
+        "novel",
+        "Orwell",
+        "sci-fi"
+      ]
+    }
+  ],
+  "tags": [
+    "classic",
+    "novel",
+    "Fitzgerald",
+    "dystopian",
+    "Orwell",
+    "sci-fi",
+    "list",
+    "recommendations",
+    "Salinger"
+  ]
+}
