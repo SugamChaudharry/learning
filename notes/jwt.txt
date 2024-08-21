@@ -1,0 +1,8 @@
+jwt.sign({
+    name: 'A',
+    age: 20,
+    email: 'a@b.c',
+}, "secret")
+
+jwt.verify(token,"secret")
+jwt.decode(token)

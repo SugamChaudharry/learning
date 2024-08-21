@@ -1,0 +1,127 @@
+create data
+read data
+update data
+delete data
+
+mongoose --> Define the schema {
+  user -> {
+    name: String,
+    age: Number,
+    email: String,
+    password: String
+  }
+} [ SQL DATA bases -> structure query language ]
+  [mongoose let you Define SQL schema / strict schema ]
+
+mongoose --> Define the schema [
+  const UserSchema = new mongoose.Schema({
+    name: {
+      type: String,
+      required: true
+    },
+    age: {
+      type: Number,
+      required: true
+    },
+    email: {
+      type: String,
+      required: true
+    },
+    password: {
+      type: String,
+      required: true
+    }
+  })
+]
+
+SQL
+  USER
+  -----------------------------------
+  id | name | age | email | password
+  1  |  A   |  20 | a@b.c | 123456
+  2  |  B   |  21 | b@b.c | 123456
+  3  |  C   |  22 | c@b.c | 123456
+  4  |  D   |  23 | d@b.c | 123456
+  -----------------------------------
+
+  course
+  -----------------------------------
+  id | name | duration | fees
+  1  |  A   |  20 | 1000
+  2  |  B   |  21 | 2000
+  3  |  C   |  22 | 3000
+  -----------------------------------
+
+  Purchase Course
+  -----------------------------------
+  id | user_id | course_id | date
+  1  |  1   |  1 | 2021-01-01
+  2  |  1   |  2 | 2021-01-02
+  3  |  2   |  1 | 2021-01-03
+  4  |  2   |  2 | 2021-01-04
+  -----------------------------------
+
+mongoose --> Define the schema [
+  const UserSchema = new mongoose.Schema({
+    name: {
+      type: String,
+      required: true
+    },
+    age: {
+      type: Number,
+      required: true
+    },
+    email: {
+      type: String,
+      required: true
+    },
+    password: {
+      type: String,
+      required: true
+    },
+    courses: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Course'
+      }
+    ]
+  })
+
+  const CourseSchema = new mongoose.Schema({
+    name: {
+      type: String,
+      required: true
+    },
+    duration: {
+      type: Number,
+      required: true
+    },
+    fees: {
+      type: Number,
+      required: true
+    }
+  })
+]
+
+create
+User.create({
+  name: 'A',
+  age: 20,
+  email: 'a@b.c',
+  password: '123456'
+});
+
+Read
+User.findBtId("213131");
+User.findOne({name: 'A'});
+User.find({name: 'A'});
+User.updateOne({id: '213131'}, ($push: {courses: 'courceId'}));
+
+update
+User.updateOne({id: '213131'}, {password: '123456'});
+User.update({},{premium: true});
+
+delete
+User.deleteMany({});
+User.deleteOne({id: '213131'});
+
