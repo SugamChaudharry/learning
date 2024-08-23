@@ -12,7 +12,7 @@ function sum(a:number,b:number): number {
 const value = sum(3,5);
 console.log(value);
 // it is infring return datatype
-function isLegal(num:number){
+function isLegal2(num:number){
   if(num>18){
     return true;
   }

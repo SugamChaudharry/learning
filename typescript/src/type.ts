@@ -1,4 +1,4 @@
-type User = {
+type User2 = {
 	firstName: string;
 	lastName: string;
 	age: number

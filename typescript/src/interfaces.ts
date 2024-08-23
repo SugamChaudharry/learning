@@ -2,12 +2,12 @@ interface User {
   name: string;
   age: number;
 }
-function isLegal(user:User):void{
+function isLegal1(user:User):void{
   if(user.age > 18) console.log(user.name + " is legal");
   else console.log(user.name + " is illegal");
 }
 
-isLegal({
+isLegal1({
     name:"sugam",
     age: 19
   })
