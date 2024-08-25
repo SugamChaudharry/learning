@@ -10,6 +10,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "lite-server": "^2.6.1"
+    "express": "^4.19.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21"
   }
 }
